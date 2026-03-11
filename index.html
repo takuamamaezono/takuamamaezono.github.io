@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>TikTok OAuth Callback</title></head>
+<body>
+<p>Redirecting...</p>
+<script>
+// TikTokからのOAuthコールバックをGASに転送
+var params = window.location.search;
+var gasUrl = "https://script.google.com/macros/s/AKfycbzpx9XLxxZ12lstTamuicSM98umurqTQ8IbLumRzs8WOQ7xng5uwR91j7ZPEJC9O4axAg/exec";
+window.location.href = gasUrl + params;
+</script>
+</body>
+</html>
